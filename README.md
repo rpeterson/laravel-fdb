@@ -7,12 +7,12 @@ Create a fdbsql database connection:
 'fdbsql' => [
   'driver'   => 'fdbsql',
   'host'     => '127.0.0.1',
-  'database' => 'klink_core',
+  'database' => 'database',
   'username' => '',
   'password' => '',
   'charset'  => 'utf8',
   'prefix'   => '',
-  'schema'   => 'klink_core',
+  'schema'   => 'database',
   'port'     => 15432
 ]
 ```
