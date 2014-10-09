@@ -1,0 +1,11 @@
+vendor
+composer.phar
+composer.lock
+.env.local.php
+.env.dev.php
+.env.production.php
+.env.php
+.env_name.php
+.DS_Store
+.idea
+Thumbs.db

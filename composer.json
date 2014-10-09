@@ -1,0 +1,22 @@
+{
+    "name": "rpeterson/laravel-fdb",
+    "description": "FoundationDB support for Laravel",
+    "require": {
+        "laravel/framework": "~4.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan J. Peterson",
+            "email": "rpeterson@serenitysoft.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "FDB\\": "src/FDB/"
+      }
+    },
+    "config": {
+      "preferred-install": "dist"
+    }
+}
