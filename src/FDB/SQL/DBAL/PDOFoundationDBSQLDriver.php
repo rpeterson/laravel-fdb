@@ -98,4 +98,3 @@ class PDOFoundationDBSQLDriver implements \Doctrine\DBAL\Driver
         return $params['dbname'];
     }
 }
-

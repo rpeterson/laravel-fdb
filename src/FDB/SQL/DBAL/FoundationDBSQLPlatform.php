@@ -683,4 +683,3 @@ class FoundationDBSQLPlatform extends AbstractPlatform
         return "BLOB";
     }
 }
-
