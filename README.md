@@ -16,3 +16,9 @@ Create a fdbsql database connection:
   'port'     => 15432
 ]
 ```
+
+Add Service Provider 
+
+```
+FDB\ServiceProvider
+```
