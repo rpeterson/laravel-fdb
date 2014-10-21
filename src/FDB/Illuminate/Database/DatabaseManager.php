@@ -1,8 +1,16 @@
 <?php namespace FDB\Illuminate\Database;
 
+use Illuminate\Database\DatabaseManager as LaravelDatabaseManager;
+
 class DatabaseManager extends LaravelDatabaseManager {
 
-	/**
+  public function __construct($app, ConnectionFactory $factory)
+  {
+    parent::__construct($app, $factory);
+  }
+
+
+  /**
 	 * Make the database connection instance.
 	 *
 	 * @param  string  $name
@@ -20,15 +28,17 @@ class DatabaseManager extends LaravelDatabaseManager {
 			return call_user_func($this->extensions[$name], $config, $name);
 		}
 
-		$driver = $config['driver'];
+    if (isset($config['driver'])) {
+      $driver = $config['driver'];
 
-		// Next we will check to see if an extension has been registered for a driver
-		// and will call the Closure if so, which allows us to have a more generic
-		// resolver for the drivers themselves which applies to all connections.
-		if (isset($this->extensions[$driver]))
-		{
-			return call_user_func($this->extensions[$driver], $config, $name);
-		}
+      // Next we will check to see if an extension has been registered for a driver
+      // and will call the Closure if so, which allows us to have a more generic
+      // resolver for the drivers themselves which applies to all connections.
+      if (isset($this->extensions[$driver]))
+      {
+        return call_user_func($this->extensions[$driver], $config, $name);
+      }
+    }
 
 		return $this->factory->make($config, $name);
 	}

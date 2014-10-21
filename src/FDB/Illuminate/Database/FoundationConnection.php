@@ -1,7 +1,7 @@
 <?php namespace FDB\Illuminate\Database;
 
 
-use KlinkCore\FDB\SQL\DBAL\PDOFoundationDBSQLDriver as DoctrineDriver;
+use FDB\SQL\DBAL\PDOFoundationDBSQLDriver as DoctrineDriver;
 use Illuminate\Database\Query\Processors\PostgresProcessor;
 use Illuminate\Database\Query\Grammars\PostgresGrammar as QueryGrammar;
 use Illuminate\Database\Schema\Grammars\PostgresGrammar as SchemaGrammar;
