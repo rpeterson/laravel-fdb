@@ -1,6 +1,12 @@
 {
     "name": "rpeterson/laravel-fdb",
     "description": "FoundationDB support for Laravel",
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/webpatser/laravel-uuid"
+      }
+    ],
     "require": {
         "laravel/framework": "~4.2",
         "webpatser/laravel-uuid": "1.*"
