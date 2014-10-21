@@ -2,7 +2,8 @@
     "name": "rpeterson/laravel-fdb",
     "description": "FoundationDB support for Laravel",
     "require": {
-        "laravel/framework": "~4.2"
+        "laravel/framework": "~4.2",
+        "webpatser/laravel-uuid": "1.*"
     },
     "license": "MIT",
     "authors": [

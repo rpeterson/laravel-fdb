@@ -22,5 +22,11 @@ class ServiceProvider extends BaseServiceProvider
       return new FoundationConnection($connection, $database, $prefix, $config);
     });
 
+    $this->app->singleton('fdb.api', function ($app, $parameters) {
+      require_once('fdb.php');
+      $api = \FDB\API::api_version(200);
+      return $api->open();
+    });
+
   }
 }
