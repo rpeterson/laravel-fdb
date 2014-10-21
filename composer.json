@@ -8,8 +8,7 @@
       }
     ],
     "require": {
-        "laravel/framework": "~4.2",
-        "webpatser/laravel-uuid": "1.*"
+        "laravel/framework": "~4.2"
     },
     "license": "MIT",
     "authors": [
